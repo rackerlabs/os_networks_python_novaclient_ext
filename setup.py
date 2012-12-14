@@ -15,15 +15,15 @@
 import setuptools
 
 setuptools.setup(
-    name='os_networksv2_python_novaclient_ext',
-    version='0.21',
+    name='os_networks_python_novaclient_ext',
+    version='0.3',
     description='Adds rackspace networks support to python-novaclient',
     long_description=open('README.rst').read(),
     author='Rackspace',
     author_email='jkoelker@rackspace.com, matt.dietz@rackspace.com',
-    url='https://github.com/rackspace/os_networksv2_python_novaclient_ext',
+    url='https://github.com/rackspace/os_networks_python_novaclient_ext',
     license='Apache License, Version 2.0',
-    py_modules=['os_networksv2_python_novaclient_ext'],
+    py_modules=['os_networks_python_novaclient_ext'],
     install_requires=['python-novaclient'],
     classifiers=[
         'Development Status :: 3 - Alpha',

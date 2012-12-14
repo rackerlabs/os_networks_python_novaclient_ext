@@ -1,3 +1,3 @@
 include README.rst
 include setup.py
-include os_networksv2_python_novaclient_ext.py
+include os_networks_python_novaclient_ext.py
