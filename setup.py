@@ -16,7 +16,7 @@ import setuptools
 
 setuptools.setup(
     name='os_networks_python_novaclient_ext',
-    version='0.31',
+    version='0.32',
     description='Adds tenant networks support to python-novaclient',
     long_description=open('README.rst').read(),
     author='Rackspace',
