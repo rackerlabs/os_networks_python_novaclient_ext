@@ -25,17 +25,18 @@ class NetworkManager(base.ManagerWithFind):
     resource_class = base.Resource
 
     def list(self):
-        return self._list('/os-networks', 'networks')
+        return self._list('/os-tenant-networks', 'networks')
 
     def get(self, network):
-        return self._get('/os-networks/%s' % base.getid(network), 'network')
+        return self._get('/os-tenant-networks/%s' % base.getid(network),
+                         'network')
 
     def delete(self, network):
-        self._delete('/os-networks/%s' % base.getid(network))
+        self._delete('/os-tenant-networks/%s' % base.getid(network))
 
     def create(self, label, cidr):
         body = {'network': {'label': label, 'cidr': cidr}}
-        return self._create('/os-networks', body, 'network')
+        return self._create('/os-tenant-networks', body, 'network')
 
 
 @utils.arg('network_id', metavar='<network_id>', help='ID of network')
